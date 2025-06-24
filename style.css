@@ -135,6 +135,82 @@ h2 {
     text-decoration: underline;
 }
 
+#restaurants {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#restaurants ul {
+    list-style: none;
+    padding: 0;
+}
+
+#restaurants li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2196F3;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#restaurants li:hover {
+    background: #f0f0f0;
+    border-left-color: #1976D2;
+}
+
+#restaurants strong {
+    color: #333;
+    font-size: 1.1em;
+}
+
+#restaurants em {
+    color: #666;
+    font-style: normal;
+}
+
+.hotel-container {
+=======
+#activities a:hover {
+    text-decoration: underline;
+}
+
+#restaurants {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#restaurants ul {
+    list-style: none;
+    padding: 0;
+}
+
+#restaurants li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2196F3;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#restaurants li:hover {
+    background: #f0f0f0;
+    border-left-color: #1976D2;
+}
+
+#restaurants strong {
+    color: #333;
+    font-size: 1.1em;
+}
+
+#restaurants em {
+    color: #666;
+    font-style: normal;
+}
+
 .hotel-container {
     display: flex;
     justify-content: space-around;
