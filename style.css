@@ -259,22 +259,58 @@ h2 {
 }
 
 .hotel-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .hotel {
-    width: 30%;
-    margin-bottom: 20px;
-    text-align: center;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .hotel img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.hotel-info {
+    padding: 15px;
+}
+
+.hotel-info p {
+    margin: 0;
+}
+
+.hotel-info a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 10px;
+}
+
+.hotel-info a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hotel-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 footer {
