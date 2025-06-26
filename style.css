@@ -191,15 +191,46 @@ h2 {
 #restaurants ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 #restaurants li {
     background: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-left: 4px solid #2196F3;
+    border-radius: 12px;
+    overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurants li img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+#restaurants li > * {
+    padding: 0 15px;
+}
+
+#restaurants li > strong {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#restaurants li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#restaurants li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 #restaurants li:hover {
