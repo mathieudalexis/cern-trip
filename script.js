@@ -16,5 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(tabId).classList.add('active');
         });
     });
+
+    // Set the default language
+    setLanguage(localStorage.getItem('language') || 'en');
 });
+
+function setLanguage(lang) {
+    localStorage.setItem('language', lang);
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+}
 

@@ -6,299 +6,304 @@
     <title>A Weekend at CERN</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>A Weekend at CERN</h1>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('fr')">FR</button>
+        </div>
+        <h1 data-i18n="weekendAtCern">A Weekend at CERN</h1>
     </header>
     <main>
         <div class="tab-container">
             <div class="tab-menu">
-                <button class="tab-button active" data-tab="main-info">Main Info</button>
-                <button class="tab-button" data-tab="accommodation">Accommodation</button>
-                <button class="tab-button" data-tab="dining">Dining</button>
-                <button class="tab-button" data-tab="events">Events</button>
-                <button class="tab-button" data-tab="museums">Museums</button>
+                <button class="tab-button active" data-tab="main-info" data-i18n="mainInfo">Main Info</button>
+                <button class="tab-button" data-tab="accommodation" data-i18n="accommodation">Accommodation</button>
+                <button class="tab-button" data-tab="dining" data-i18n="dining">Dining</button>
+                <button class="tab-button" data-tab="events" data-i18n="events">Events</button>
+                <button class="tab-button" data-tab="museums" data-i18n="museums">Museums</button>
             </div>
             
             <div class="tab-content active" id="main-info">
                 <section id="intro">
-                    <p>Your detailed guide to an unforgettable weekend trip to the heart of particle physics.</p>
+                    <p data-i18n="detailedGuide">Your detailed guide to an unforgettable weekend trip to the heart of particle physics.</p>
                 </section>
                 <section id="schedule">
-                    <h2>Your Itinerary</h2>
+                    <h2 data-i18n="yourItinerary">Your Itinerary</h2>
             <div class="day">
-                <h3>Day 1: Saturday, July 26th, 2025</h3>
+                <h3 data-i18n="day1">Day 1: Saturday, July 26th, 2025</h3>
                 <ul>
-                    <li><strong>Morning (6:00 AM - 12:00 PM):</strong> Travel from Dijon to Geneva, check into your accommodation, and head to CERN.</li>
-                    <li><strong>Afternoon (12:00 PM - 6:00 PM):</strong> Lunch, followed by a guided tour of CERN.</li>
-                    <li><strong>Evening (6:00 PM onwards):</strong> Dinner and relaxation.</li>
+                    <li data-i18n="day1Morning"><strong>Morning (6:00 AM - 12:00 PM):</strong> Travel from Dijon to Geneva, check into your accommodation, and head to CERN.</li>
+                    <li data-i18n="day1Afternoon"><strong>Afternoon (12:00 PM - 6:00 PM):</strong> Lunch, followed by a guided tour of CERN.</li>
+                    <li data-i18n="day1Evening"><strong>Evening (6:00 PM onwards):</strong> Dinner and relaxation.</li>
                 </ul>
             </div>
             <div class="day">
-                <h3>Day 2: Sunday, July 27th, 2025</h3>
+                <h3 data-i18n="day2">Day 2: Sunday, July 27th, 2025</h3>
                 <ul>
-                    <li><strong>Morning (9:00 AM - 12:00 PM):</strong> Revisit CERN exhibitions and check out.</li>
-                    <li><strong>Afternoon (12:00 PM - 6:00 PM):</strong> Lunch in Geneva and travel back to Dijon.</li>
-                    <li><strong>Evening (6:00 PM onwards):</strong> Arrive back in Dijon.</li>
+                    <li data-i18n="day2Morning"><strong>Morning (9:00 AM - 12:00 PM):</strong> Revisit CERN exhibitions and check out.</li>
+                    <li data-i18n="day2Afternoon"><strong>Afternoon (12:00 PM - 6:00 PM):</strong> Lunch in Geneva and travel back to Dijon.</li>
+                    <li data-i18n="day2Evening"><strong>Evening (6:00 PM onwards):</strong> Arrive back in Dijon.</li>
                 </ul>
             </div>
         </section>
         <section id="modalities">
-            <h2>Visit Modalities</h2>
-            <p>To make the most of your CERN visit, please be aware of the following:</p>
+            <h2 data-i18n="visitModalities">Visit Modalities</h2>
+            <p data-i18n="modalitiesIntro">To make the most of your CERN visit, please be aware of the following:</p>
             <ul>
-                <li><strong>Booking:</strong> All visits to CERN are free of charge. However, booking is mandatory for all guided tours and must be made in advance through the official CERN website.</li>
-                <li><strong>Activities:</strong> CERN offers a wide range of activities, including permanent and temporary exhibitions, science shows, and lab workshops. Some activities may require on-the-spot booking, so be sure to check the daily schedule upon arrival.</li>
-                <li><strong>Planning:</strong> For detailed information on opening hours, how to get to CERN, and accessibility, please refer to the <a href="https://visit.cern/" target="_blank">official CERN website</a>.</li>
+                <li data-i18n="booking"><strong>Booking:</strong> All visits to CERN are free of charge. However, booking is mandatory for all guided tours and must be made in advance through the official CERN website.</li>
+                <li data-i18n="activities"><strong>Activities:</strong> CERN offers a wide range of activities, including permanent and temporary exhibitions, science shows, and lab workshops. Some activities may require on-the-spot booking, so be sure to check the daily schedule upon arrival.</li>
+                <li data-i18n="planning"><strong>Planning:</strong> For detailed information on opening hours, how to get to CERN, and accessibility, please refer to the <a href="https://visit.cern/" target="_blank">official CERN website</a>.</li>
             </ul>
         </section>
         <section id="activities">
-            <h2>Activities and Guided Tours</h2>
-            <p>CERN offers a variety of tours and activities. Here’s a summary of what you can expect:</p>
+            <h2 data-i18n="activitiesAndTours">Activities and Guided Tours</h2>
+            <p data-i18n="activitiesIntro">CERN offers a variety of tours and activities. Here’s a summary of what you can expect:</p>
             <ul>
-                <li><strong>Synchrocyclotron:</strong> Discover CERN’s first accelerator, the Synchrocyclotron, and learn about the early history of the laboratory.</li>
-                <li><strong>ATLAS Control Centre:</strong> Get a behind-the-scenes look at the control centre for the ATLAS experiment, one of the detectors that discovered the Higgs boson.</li>
-                <li><strong>Booking Tours:</strong> Guided tours are free but in high demand. You can register for a tour on a first-come, first-served basis upon arrival at the CERN Science Gateway via a dedicated web app. It is recommended to arrive early to increase your chances.</li>
-                <li><strong>Underground Visits:</strong> Please note that underground visits are not available for individual visitors.</li>
-                <li><strong>Other Activities:</strong> For more information on other activities, such as science shows and lab workshops, please check the <a href="https://visit.cern/families-individual-visitors" target="_blank">official CERN website</a>.</li>
+                <li data-i18n="synchrocyclotron"><strong>Synchrocyclotron:</strong> Discover CERN’s first accelerator, the Synchrocyclotron, and learn about the early history of the laboratory.</li>
+                <li data-i18n="atlasControlCenter"><strong>ATLAS Control Centre:</strong> Get a behind-the-scenes look at the control centre for the ATLAS experiment, one of the detectors that discovered the Higgs boson.</li>
+                <li data-i18n="bookingTours"><strong>Booking Tours:</strong> Guided tours are free but in high demand. You can register for a tour on a first-come, first-served basis upon arrival at the CERN Science Gateway via a dedicated web app. It is recommended to arrive early to increase your chances.</li>
+                <li data-i18n="undergroundVisits"><strong>Underground Visits:</strong> Please note that underground visits are not available for individual visitors.</li>
+                <li data-i18n="otherActivities"><strong>Other Activities:</strong> For more information on other activities, such as science shows and lab workshops, please check the <a href="https://visit.cern/families-individual-visitors" target="_blank">official CERN website</a>.</li>
             </ul>
         </section>
         <section id="notes">
-            <h2>Important Notes</h2>
+            <h2 data-i18n="importantNotes">Important Notes</h2>
             <ul>
-                <li>Book train tickets and CERN tours well in advance.</li>
-                <li>Accommodation near CERN is limited, so book early.</li>
-                <li>Verify the CERN shuttle schedule.</li>
-                <li>This is a suggested schedule, feel free to adapt it.</li>
+                <li data-i18n="bookInAdvance">Book train tickets and CERN tours well in advance.</li>
+                <li data-i18n="accommodationLimited">Accommodation near CERN is limited, so book early.</li>
+                <li data-i18n="verifyShuttle">Verify the CERN shuttle schedule.</li>
+                <li data-i18n="suggestedSchedule">This is a suggested schedule, feel free to adapt it.</li>
             </ul>
         </section>
     </div>
     <div class="tab-content" id="accommodation">
         <section id="accommodation">
-            <h2>Affordable Accommodation in Geneva</h2>
-            <p>Here are some budget-friendly accommodation options in Geneva that are highly rated by couples:</p>
+            <h2 data-i18n="affordableAccommodation">Affordable Accommodation in Geneva</h2>
+            <p data-i18n="accommodationIntro">Here are some budget-friendly accommodation options in Geneva that are highly rated by couples:</p>
             <div class="hotel-container">
                 <div class="hotel">
                     <img src="https://res.cloudinary.com/amenitiz/image/upload/v1664193878/oijdpyqmtgctbss40re2.jpg" alt="Hotel Rousseau - Deluxe Room">
                     <div class="hotel-info">
-                        <h3>Hotel Rousseau</h3>
-                        <p>Centrally located near Lake Geneva</p>
-                        <p>From CHF 150 per night</p>
+                        <h3 data-i18n="hotelRousseau">Hotel Rousseau</h3>
+                        <p data-i18n="rousseauDesc">Centrally located near Lake Geneva</p>
+                        <p data-i18n="rousseauPrice">From CHF 150 per night</p>
                         <div class="hotel-amenities">
-                            <h4>Services & Amenities:</h4>
+                            <h4 data-i18n="rousseauAmenities">Services & Amenities:</h4>
                             <ul>
-                                <li>24/7 Multilingual Reception</li>
-                                <li>Free High-speed WiFi</li>
-                                <li>Hammam & Fitness Area (10am-10pm)</li>
-                                <li>Breakfast Service (7:00-10:30)</li>
-                                <li>Central Location (100m from Lake Geneva)</li>
-                                <li>Newly Renovated Rooms</li>
-                                <li>Luggage Storage</li>
-                                <li>Rooms with City View</li>
-                                <li>Accessible Rooms Available</li>
+                                <li data-i18n="rousseauA1">24/7 Multilingual Reception</li>
+                                <li data-i18n="rousseauA2">Free High-speed WiFi</li>
+                                <li data-i18n="rousseauA3">Hammam & Fitness Area (10am-10pm)</li>
+                                <li data-i18n="rousseauA4">Breakfast Service (7:00-10:30)</li>
+                                <li data-i18n="rousseauA5">Central Location (100m from Lake Geneva)</li>
+                                <li data-i18n="rousseauA6">Newly Renovated Rooms</li>
+                                <li data-i18n="rousseauA7">Luggage Storage</li>
+                                <li data-i18n="rousseauA8">Rooms with City View</li>
+                                <li data-i18n="rousseauA9">Accessible Rooms Available</li>
                             </ul>
                         </div>
-                        <a href="https://www.hotel-rousseau.ch/en" target="_blank">Book Now</a>
+                        <a href="https://www.hotel-rousseau.ch/en" target="_blank" data-i18n="bookNow">Book Now</a>
                     </div>
                 </div>
                 <div class="hotel">
                     <img src="https://hotelalpes.ch/wp-content/uploads/2020/03/accueil-7.jpg" alt="Hotel des Alpes - Executive Room">
                     <div class="hotel-info">
-                        <h3>Hotel des Alpes</h3>
-                        <p>Cozy hotel with mountain views</p>
-                        <p>From CHF 140 per night</p>
+                        <h3 data-i18n="hotelDesAlpes">Hotel des Alpes</h3>
+                        <p data-i18n="desAlpesDesc">Cozy hotel with mountain views</p>
+                        <p data-i18n="desAlpesPrice">From CHF 140 per night</p>
                         <div class="hotel-amenities">
-                            <h4>Services & Amenities:</h4>
+                            <h4 data-i18n="desAlpesAmenities">Services & Amenities:</h4>
                             <ul>
-                                <li>Free High-speed WiFi</li>
-                                <li>Air-conditioned Rooms</li>
-                                <li>24-hour Reception</li>
-                                <li>Vending Machine</li>
-                                <li>Central Location near Public Transport</li>
-                                <li>Non-smoking Rooms</li>
-                                <li>Elevator Access</li>
-                                <li>Daily Housekeeping</li>
-                                <li>Luggage Storage</li>
+                                <li data-i18n="desAlpesA1">Free High-speed WiFi</li>
+                                <li data-i18n="desAlpesA2">Air-conditioned Rooms</li>
+                                <li data-i18n="desAlpesA3">24-hour Reception</li>
+                                <li data-i18n="desAlpesA4">Vending Machine</li>
+                                <li data-i18n="desAlpesA5">Central Location near Public Transport</li>
+                                <li data-i18n="desAlpesA6">Non-smoking Rooms</li>
+                                <li data-i18n="desAlpesA7">Elevator Access</li>
+                                <li data-i18n="desAlpesA8">Daily Housekeeping</li>
+                                <li data-i18n="desAlpesA9">Luggage Storage</li>
                             </ul>
                         </div>
-                        <a href="https://hotelalpes.ch/en/home/" target="_blank">Book Now</a>
+                        <a href="https://hotelalpes.ch/en/home/" target="_blank" data-i18n="bookNow">Book Now</a>
                     </div>
                 </div>
                 <div class="hotel">
                     <img src="https://www.bernina-geneve.ch/wp-content/uploads/sites/148/2023/01/bernina_opening_20_104.jpg" alt="Hotel Bernina Geneva - Superior Double Room">
                     <div class="hotel-info">
-                        <h3>Hotel Bernina Geneva</h3>
-                        <p>Modern comfort near the station</p>
-                        <p>From CHF 145 per night</p>
+                        <h3 data-i18n="hotelBernina">Hotel Bernina Geneva</h3>
+                        <p data-i18n="berninaDesc">Modern comfort near the station</p>
+                        <p data-i18n="berninaPrice">From CHF 145 per night</p>
                         <div class="hotel-amenities">
-                            <h4>Services & Amenities:</h4>
+                            <h4 data-i18n="berninaAmenities">Services & Amenities:</h4>
                             <ul>
-                                <li>Free WiFi Throughout</li>
-                                <li>Restaurant & Bar</li>
-                                <li>Business Center</li>
-                                <li>Room Service</li>
-                                <li>24-hour Front Desk</li>
-                                <li>Fitness Area</li>
-                                <li>Luggage Storage</li>
-                                <li>Close to Train Station</li>
-                                <li>Air Conditioning</li>
+                                <li data-i18n="berninaA1">Free WiFi Throughout</li>
+                                <li data-i18n="berninaA2">Restaurant & Bar</li>
+                                <li data-i18n="berninaA3">Business Center</li>
+                                <li data-i18n="berninaA4">Room Service</li>
+                                <li data-i18n="berninaA5">24-hour Front Desk</li>
+                                <li data-i18n="berninaA6">Fitness Area</li>
+                                <li data-i18n="berninaA7">Luggage Storage</li>
+                                <li data-i18n="berninaA8">Close to Train Station</li>
+                                <li data-i18n="berninaA9">Air Conditioning</li>
                             </ul>
                         </div>
-                        <a href="https://hotelberninageneva.ch-hotel.com/en/" target="_blank">Book Now</a>
+                        <a href="https://hotelberninageneva.ch-hotel.com/en/" target="_blank" data-i18n="bookNow">Book Now</a>
                     </div>
                 </div>
             </div>
-            <p>For more options and to check for the latest deals, you can visit <a href="https://www.booking.com/city/ch/geneva.html" target="_blank">Booking.com</a>.</p>
+            <p data-i18n="moreOptions">For more options and to check for the latest deals, you can visit <a href="https://www.booking.com/city/ch/geneva.html" target="_blank">Booking.com</a>.</p>
         </section>
         </section>
     </div>
     <div class="tab-content" id="dining">
         <section id="restaurants">
-            <h2>Affordable Dining in Geneva</h2>
-            <p>Discover delicious and budget-friendly dining options in Geneva, all under 150 CHF for two people:</p>
+            <h2 data-i18n="affordableDining">Affordable Dining in Geneva</h2>
+            <p data-i18n="diningIntro">Discover delicious and budget-friendly dining options in Geneva, all under 150 CHF for two people:</p>
             <ul>
                 <li>
                                                 <img src="https://cdn.prod.website-files.com/64e724fedadbbc18876de859/650d69eb1f2b68ab0736898c_fb9366ad875b6d22c0827c6295e86a5b-xxlarge.jpg" alt="Café du Soleil Interior">
-                    <strong><a href="https://www.cafedusoleil.ch" target="_blank">Café du Soleil</a></strong>
-                    <p><em>Cuisine:</em> Traditional Swiss</p>
-                    <p><em>Price Range:</em> CHF 20-35 (€21-37) per person</p>
-                    <p><em>Highlights:</em> Authentic Swiss fondue, warm atmosphere, excellent local dishes. Customers praise the friendly service and authentic Swiss experience.</p>
+                    <strong><a href="https://www.cafedusoleil.ch" target="_blank" data-i18n="cafeDuSoleil">Café du Soleil</a></strong>
+                    <p data-i18n="soleilCuisine"><em>Cuisine:</em> Traditional Swiss</p>
+                    <p data-i18n="soleilPrice"><em>Price Range:</em> CHF 20-35 (€21-37) per person</p>
+                    <p data-i18n="soleilHighlights"><em>Highlights:</em> Authentic Swiss fondue, warm atmosphere, excellent local dishes. Customers praise the friendly service and authentic Swiss experience.</p>
                 </li>
                 <li>
                     <img src="https://static.wixstatic.com/media/600fc5_3cd07b9065ed49519df16df1717ae35e~mv2.jpg/v1/fill/w_968,h_1456,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/600fc5_3cd07b9065ed49519df16df1717ae35e~mv2.jpg" alt="Chiche ou pas Chiche - Interior">
-                    <strong><a href="https://www.chicheoupaschiche.com/" target="_blank">Chiche ou pas Chiche</a></strong>
-                    <p><em>Cuisine:</em> Mediterranean/Middle Eastern</p>
-                    <p><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
-                    <p><em>Highlights:</em> Creative mezze platters, vibrant flavors, great for sharing. Reviewers love the fresh ingredients and innovative menu.</p>
+                    <strong><a href="https://www.chicheoupaschiche.com/" target="_blank" data-i18n="chiche">Chiche ou pas Chiche</a></strong>
+                    <p data-i18n="chicheCuisine"><em>Cuisine:</em> Mediterranean/Middle Eastern</p>
+                    <p data-i18n="chichePrice"><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
+                    <p data-i18n="chicheHighlights"><em>Highlights:</em> Creative mezze platters, vibrant flavors, great for sharing. Reviewers love the fresh ingredients and innovative menu.</p>
                 </li>
                 <li>
                     <img src="https://static.wixstatic.com/media/67b231_6058acc15ec04e279fdfea8519b4864d~mv2.png/v1/fill/w_1352,h_880,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/67b231_6058acc15ec04e279fdfea8519b4864d~mv2.png" alt="Flore Restaurant - Dining Area">
-                    <strong><a href="https://www.restaurantleflore.ch/" target="_blank">Flore Restaurant</a></strong>
-                    <p><em>Cuisine:</em> European/Mediterranean</p>
-                    <p><em>Price Range:</em> CHF 25-35 (€26-37) per person</p>
-                    <p><em>Highlights:</em> Seasonal menu, locally sourced ingredients, cozy ambiance. Customers appreciate the chef's creativity and fresh dishes.</p>
+                    <strong><a href="https://www.restaurantleflore.ch/" target="_blank" data-i18n="flore">Flore Restaurant</a></strong>
+                    <p data-i18n="floreCuisine"><em>Cuisine:</em> European/Mediterranean</p>
+                    <p data-i18n="florePrice"><em>Price Range:</em> CHF 25-35 (€26-37) per person</p>
+                    <p data-i18n="floreHighlights"><em>Highlights:</em> Seasonal menu, locally sourced ingredients, cozy ambiance. Customers appreciate the chef's creativity and fresh dishes.</p>
                 </li>
                 <li>
                     <img src="https://www.geneve.com/fileadmin/_processed_/7/9/csm_70406_118689_v0-317068429_513782830801214_6670573937935509581_n_06168aea24.webp" alt="Café du Lys - Cozy Interior">
-                    <strong><a href="https://www.geneve.com/en/restaurants/cafe-du-lys" target="_blank">Café du Lys</a></strong>
-                    <p><em>Cuisine:</em> Swiss and International</p>
-                    <p><em>Price Range:</em> CHF 20-30 (€21-32) per person</p>
-                    <p><em>Highlights:</em> Cozy café atmosphere, great for lunch, mix of Swiss and international dishes. Reviewers enjoy the relaxed setting.</p>
+                    <strong><a href="https://www.geneve.com/en/restaurants/cafe-du-lys" target="_blank" data-i18n="cafeDuLys">Café du Lys</a></strong>
+                    <p data-i18n="lysCuisine"><em>Cuisine:</em> Swiss and International</p>
+                    <p data-i18n="lysPrice"><em>Price Range:</em> CHF 20-30 (€21-32) per person</p>
+                    <p data-i18n="lysHighlights"><em>Highlights:</em> Cozy café atmosphere, great for lunch, mix of Swiss and international dishes. Reviewers enjoy the relaxed setting.</p>
                 </li>
                 <li>
                     <img src="https://www.le-gruyerien.ch/wp-content/uploads/2019/03/bucheronne.jpg" alt="Le Gruyérien - Swiss Cuisine">
-                    <strong><a href="https://www.le-gruyerien.ch/gruyerien/plainpalais/" target="_blank">Le Gruyérien</a></strong>
-                    <p><em>Cuisine:</em> Swiss Specialties</p>
-                    <p><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
-                    <p><em>Highlights:</em> Specializes in cheese and meat dishes, traditional Swiss cuisine. Praised for authentic local flavors.</p>
+                    <strong><a href="https://www.le-gruyerien.ch/gruyerien/plainpalais/" target="_blank" data-i18n="leGruyerien">Le Gruyérien</a></strong>
+                    <p data-i18n="gruyerienCuisine"><em>Cuisine:</em> Swiss Specialties</p>
+                    <p data-i18n="gruyerienPrice"><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
+                    <p data-i18n="gruyerienHighlights"><em>Highlights:</em> Specializes in cheese and meat dishes, traditional Swiss cuisine. Praised for authentic local flavors.</p>
                 </li>
                 <li>
                     <img src="https://imgs.search.brave.com/pAmStlHIMx6aHAH7zBlZawn6GQAv3frvg3_7jZLgYFc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL3Av/QUYxUWlwTmQzX3d1/d3E5cWZOaVBXQXlF/YVBSZlJzYXBjRU9K/dFdQRVhYUjQ9czE2/MDAtdzY0MA" alt="Chez Ma Cousine - Roast Chicken">
-                    <strong><a href="https://www.chezmacousine.ch/" target="_blank">Chez Ma Cousine</a></strong>
-                    <p><em>Cuisine:</em> French-Swiss</p>
-                    <p><em>Price Range:</em> CHF 20-35 (€21-37) per person</p>
-                    <p><em>Highlights:</em> Famous for roast chicken, homestyle cooking. Consistently good reviews for quality and portion sizes.</p>
+                    <strong><a href="https://www.chezmacousine.ch/" target="_blank" data-i18n="chezMaCousine">Chez Ma Cousine</a></strong>
+                    <p data-i18n="cousineCuisine"><em>Cuisine:</em> French-Swiss</p>
+                    <p data-i18n="cousinePrice"><em>Price Range:</em> CHF 20-35 (€21-37) per person</p>
+                    <p data-i18n="cousineHighlights"><em>Highlights:</em> Famous for roast chicken, homestyle cooking. Consistently good reviews for quality and portion sizes.</p>
                 </li>
                 <li>
                     <img src="https://appart-lausanne.ch/wp-content/uploads/restaurant-gastro-lausanne-appart-home2-1200x800.jpg" alt="L'Appart - Modern European Cuisine">
-                    <strong><a href="https://appart-lausanne.ch/" target="_blank">L'Appart</a></strong>
-                    <p><em>Cuisine:</em> Modern European</p>
-                    <p><em>Price Range:</em> CHF 30-45 (€32-47) per person</p>
-                    <p><em>Highlights:</em> Contemporary plating, innovative dishes, great wine selection. Loved by foodies for creative cuisine.</p>
+                    <strong><a href="https://appart-lausanne.ch/" target="_blank" data-i18n="lAppart">L'Appart</a></strong>
+                    <p data-i18n="appartCuisine"><em>Cuisine:</em> Modern European</p>
+                    <p data-i18n="appartPrice"><em>Price Range:</em> CHF 30-45 (€32-47) per person</p>
+                    <p data-i18n="appartHighlights"><em>Highlights:</em> Contemporary plating, innovative dishes, great wine selection. Loved by foodies for creative cuisine.</p>
                 </li>
                 <li>
                     <img src="https://www.relaisentrecote.fr/wp-content/uploads/2014/06/plat_small01.jpg" alt="Le Relais de l'Entrecôte - Steak and Frites">
-                    <strong><a href="https://www.relaisentrecote.fr/" target="_blank">Le Relais de l'Entrecôte</a></strong>
-                    <p><em>Cuisine:</em> Steak and Frites</p>
-                    <p><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
-                    <p><em>Highlights:</em> Famous for single menu of steak with secret sauce, unlimited fries. Popular among meat lovers.</p>
+                    <strong><a href="https://www.relaisentrecote.fr/" target="_blank" data-i18n="leRelais">Le Relais de l'Entrecôte</a></strong>
+                    <p data-i18n="relaisCuisine"><em>Cuisine:</em> Steak and Frites</p>
+                    <p data-i18n="relaisPrice"><em>Price Range:</em> CHF 25-40 (€26-42) per person</p>
+                    <p data-i18n="relaisHighlights"><em>Highlights:</em> Famous for single menu of steak with secret sauce, unlimited fries. Popular among meat lovers.</p>
                 </li>
                 <li>
                     <img src="https://cdn.prod.website-files.com/64a56f5667ffbab04cf1fe0c/64ca50afabe6b787c389e761_DSC03068.jpg" alt="La Clemence - Historic Restaurant Interior">
-                    <strong><a href="https://www.laclemence.ch/en" target="_blank">La Clemence</a></strong>
-                    <p><em>Cuisine:</em> Traditional Swiss/French</p>
-                    <p><em>Price Range:</em> CHF 25-35 (€26-37) per person</p>
-                    <p><em>Highlights:</em> Historic location, classic dishes, great wine selection. Appreciated for its charming old-town atmosphere.</p>
+                    <strong><a href="https://www.laclemence.ch/en" target="_blank" data-i18n="laClemence">La Clemence</a></strong>
+                    <p data-i18n="clemenceCuisine"><em>Cuisine:</em> Traditional Swiss/French</p>
+                    <p data-i18n="clemencePrice"><em>Price Range:</em> CHF 25-35 (€26-37) per person</p>
+                    <p data-i18n="clemenceHighlights"><em>Highlights:</em> Historic location, classic dishes, great wine selection. Appreciated for its charming old-town atmosphere.</p>
                 </li>
             </ul>
-            <p>Note: Prices and availability may vary. It's recommended to check current menus and make reservations in advance.</p>
+            <p data-i18n="diningNote">Note: Prices and availability may vary. It's recommended to check current menus and make reservations in advance.</p>
         </section>
     </div>
     <div class="tab-content" id="events">
         <section id="events-info">
-            <h2>Events in Geneva (July 26-27, 2025)</h2>
-            <p>Here are some events happening in Geneva during your visit. Please note that more events may be announced closer to the date.</p>
+            <h2 data-i18n="eventsInGeneva">Events in Geneva (July 26-27, 2025)</h2>
+            <p data-i18n="eventsIntro">Here are some events happening in Geneva during your visit. Please note that more events may be announced closer to the date.</p>
             <ul>
                 <li>
-                    <strong>Geneva Arts Fair</strong>
-                    <p><em>Date:</em> July 26-27, 2025</p>
-                    <p><em>Time:</em> 10:00 AM - 5:00 PM</p>
-                    <p><em>Location:</em> Downtown Geneva</p>
-                    <p><em>Admission:</em> Free</p>
-                    <p><em>Description:</em> An annual fair featuring artists from around the country.</p>
+                    <strong data-i18n="genevaArtsFair">Geneva Arts Fair</strong>
+                    <p data-i18n="artsFairDate"><em>Date:</em> July 26-27, 2025</p>
+                    <p data-i18n="artsFairTime"><em>Time:</em> 10:00 AM - 5:00 PM</p>
+                    <p data-i18n="artsFairLocation"><em>Location:</em> Downtown Geneva</p>
+                    <p data-i18n="artsFairAdmission"><em>Admission:</em> Free</p>
+                    <p data-i18n="artsFairDesc"><em>Description:</em> An annual fair featuring artists from around the country.</p>
                 </li>
                 <li>
-                    <strong>Paléo Festival</strong>
-                    <p><em>Date:</em> July 22-27, 2025</p>
-                    <p><em>Location:</em> Nyon (near Geneva)</p>
-                    <p><em>Description:</em> One of Switzerland's largest open-air music festivals, featuring a diverse lineup of international artists. Check the <a href="https://yeah.paleo.ch/" target="_blank">official website</a> for the full program and ticket information.</p>
+                    <strong data-i18n="paleoFestival">Paléo Festival</strong>
+                    <p data-i18n="paleoDate"><em>Date:</em> July 22-27, 2025</p>
+                    <p data-i18n="paleoLocation"><em>Location:</em> Nyon (near Geneva)</p>
+                    <p data-i18n="paleoDesc"><em>Description:</em> One of Switzerland's largest open-air music festivals, featuring a diverse lineup of international artists. Check the <a href="https://yeah.paleo.ch/" target="_blank">official website</a> for the full program and ticket information.</p>
                 </li>
                 <li>
-                    <strong>UEFA Women's Euro 2025</strong>
-                    <p><em>Date:</em> July 2-27, 2025</p>
-                    <p><em>Location:</em> Various cities in Switzerland, including Geneva</p>
-                    <p><em>Description:</em> The UEFA Women's Euro 2025 will be held in Switzerland. Check the <a href="https://www.uefa.com/womenseuro/" target="_blank">official UEFA website</a> for match schedules and ticket information.</p>
+                    <strong data-i18n="uefaWomensEuro">UEFA Women's Euro 2025</strong>
+                    <p data-i18n="uefaDate"><em>Date:</em> July 2-27, 2025</p>
+                    <p data-i18n="uefaLocation"><em>Location:</em> Various cities in Switzerland, including Geneva</p>
+                    <p data-i18n="uefaDesc"><em>Description:</em> The UEFA Women's Euro 2025 will be held in Switzerland. Check the <a href="https://www.uefa.com/womenseuro/" target="_blank">official UEFA website</a> for match schedules and ticket information.</p>
                 </li>
                 <li>
-                    <strong>Ablaye Cissoko & Cyrille Brotto</strong>
-                    <p><em>Date:</em> July 26, 2025</p>
-                    <p><em>Time:</em> 9:00 PM</p>
-                    <p><em>Location:</em> Théâtre de l'Orangerie, Geneva</p>
-                    <p><em>Admission:</em> Free</p>
-                    <p><em>Description:</em> A concert featuring a unique collaboration between Senegalese griot Ablaye Cissoko and French accordionist Cyrille Brotto, blending traditional Mandingue music with contemporary sounds. For more information, visit the <a href="http://www.theatreorangerie.ch" target="_blank">Théâtre de l'Orangerie website</a>.</p>
+                    <strong data-i18n="ablayeCissoko">Ablaye Cissoko & Cyrille Brotto</strong>
+                    <p data-i18n="ablayeDate"><em>Date:</em> July 26, 2025</p>
+                    <p data-i18n="ablayeTime"><em>Time:</em> 9:00 PM</p>
+                    <p data-i18n="ablayeLocation"><em>Location:</em> Théâtre de l'Orangerie, Geneva</p>
+                    <p data-i18n="ablayeAdmission"><em>Admission:</em> Free</p>
+                    <p data-i18n="ablayeDesc"><em>Description:</em> A concert featuring a unique collaboration between Senegalese griot Ablaye Cissoko and French accordionist Cyrille Brotto, blending traditional Mandingue music with contemporary sounds. For more information, visit the <a href="http://www.theatreorangerie.ch" target="_blank">Théâtre de l'Orangerie website</a>.</p>
                 </li>
             </ul>
         </section>
     </div>
     <div class="tab-content" id="museums">
         <section id="museums-info">
-            <h2>Art Museums in Geneva</h2>
-            <p>Geneva is home to a variety of excellent art museums. Here are some of the most prominent, along with their exhibitions for July 2025:</p>
+            <h2 data-i18n="artMuseums">Art Museums in Geneva</h2>
+            <p data-i18n="museumsIntro">Geneva is home to a variety of excellent art museums. Here are some of the most prominent, along with their exhibitions for July 2025:</p>
             <ul>
                 <li>
-                    <strong>Musée d'art et d'histoire</strong>
-                    <p>As the largest art museum in Geneva, the Musée d'art et d'histoire boasts a collection of over 7,000 exhibits, ranging from prehistoric finds to modern paintings. It features works by the famous Swiss portraitist Jean-Etienne Liotard and offers a comprehensive overview of art and history.</p>
-                    <p><em>Exhibitions in July 2025:</em></p>
+                    <strong data-i18n="mah">Musée d'art et d'histoire</strong>
+                    <p data-i18n="mahDesc">As the largest art museum in Geneva, the Musée d'art et d'histoire boasts a collection of over 7,000 exhibits, ranging from prehistoric finds to modern paintings. It features works by the famous Swiss portraitist Jean-Etienne Liotard and offers a comprehensive overview of art and history.</p>
+                    <p data-i18n="mahExhibitions"><em>Exhibitions in July 2025:</em></p>
                     <ul>
-                        <li>"Post Tenebras Lux": Featuring over 200 lesser-known works.</li>
-                        <li>"L'Enfant dans l'art suisse"</li>
-                        <li>"Beaux-Arts revisitée"</li>
+                        <li data-i18n="mahEx1">"Post Tenebras Lux": Featuring over 200 lesser-known works.</li>
+                        <li data-i18n="mahEx2">"L'Enfant dans l'art suisse"</li>
+                        <li data-i18n="mahEx3">"Beaux-Arts revisitée"</li>
                     </ul>
-                    <p>For more information, visit the <a href="https://www.mahmah.ch/" target="_blank">official website</a>.</p>
+                    <p data-i18n="mahLink">For more information, visit the <a href="https://www.mahmah.ch/" target="_blank">official website</a>.</p>
                 </li>
                 <li>
-                    <strong>MAMCO (Museum of Modern and Contemporary Art)</strong>
-                    <p>MAMCO is Switzerland's largest contemporary art museum, housed in a former factory building. It offers dynamic exhibitions and is a key reference for contemporary art.</p>
-                    <p><em>Exhibitions in July 2025:</em></p>
+                    <strong data-i18n="mamco">MAMCO (Museum of Modern and Contemporary Art)</strong>
+                    <p data-i18n="mamcoDesc">MAMCO is Switzerland's largest contemporary art museum, housed in a former factory building. It offers dynamic exhibitions and is a key reference for contemporary art.</p>
+                    <p data-i18n="mamcoExhibitions"><em>Exhibitions in July 2025:</em></p>
                     <ul>
-                        <li>"Le MAMCO de mémoire": The final exhibition in its historic premises.</li>
-                        <li>"Sarah Benslimane - Manor Cultural Prize 2025"</li>
-                        <li>"Encore" by John M Armleder</li>
+                        <li data-i18n="mamcoEx1">"Le MAMCO de mémoire": The final exhibition in its historic premises.</li>
+                        <li data-i18n="mamcoEx2">"Sarah Benslimane - Manor Cultural Prize 2025"</li>
+                        <li data-i18n="mamcoEx3">"Encore" by John M Armleder</li>
                     </ul>
-                    <p>For more details, visit the <a href="https://www.mamco.ch/en" target="_blank">official website</a>.</p>
+                    <p data-i18n="mamcoLink">For more details, visit the <a href="https://www.mamco.ch/en" target="_blank">official website</a>.</p>
                 </li>
                 <li>
-                    <strong>Barbier-Mueller Museum</strong>
-                    <p>The Barbier-Mueller Museum holds an impressive collection of over 7,000 art pieces from antiquity to modern times. The museum hosts two thematic exhibitions annually, but specific details for July 2025 are not yet available. Please check the <a href="https://www.barbier-mueller.ch/" target="_blank">official website</a> for the latest information.</p>
+                    <strong data-i18n="barbierMueller">Barbier-Mueller Museum</strong>
+                    <p data-i18n="barbierDesc">The Barbier-Mueller Museum holds an impressive collection of over 7,000 art pieces from antiquity to modern times. The museum hosts two thematic exhibitions annually, but specific details for July 2025 are not yet available. Please check the <a href="https://www.barbier-mueller.ch/" target="_blank">official website</a> for the latest information.</p>
                 </li>
             </ul>
         </section>
     </div>
     </main>
     <footer>
-        <p>Created for you</p>
+        <p data-i18n="createdForYou">Created for you</p>
     </footer>
 </body>
 </html>
