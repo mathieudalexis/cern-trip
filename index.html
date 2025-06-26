@@ -6,17 +6,25 @@
     <title>A Weekend at CERN</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>A Weekend at CERN</h1>
     </header>
     <main>
-        <section id="intro">
-            <p>Your detailed guide to an unforgettable weekend trip to the heart of particle physics.</p>
-        </section>
-        <section id="schedule">
-            <h2>Your Itinerary</h2>
+        <div class="tab-container">
+            <div class="tab-menu">
+                <button class="tab-button active" data-tab="main-info">Main Info</button>
+                <button class="tab-button" data-tab="accommodation-dining">Accommodation & Dining</button>
+            </div>
+            
+            <div class="tab-content active" id="main-info">
+                <section id="intro">
+                    <p>Your detailed guide to an unforgettable weekend trip to the heart of particle physics.</p>
+                </section>
+                <section id="schedule">
+                    <h2>Your Itinerary</h2>
             <div class="day">
                 <h3>Day 1: Saturday, July 26th, 2025</h3>
                 <ul>
@@ -54,6 +62,17 @@
                 <li><strong>Other Activities:</strong> For more information on other activities, such as science shows and lab workshops, please check the <a href="https://visit.cern/families-individual-visitors" target="_blank">official CERN website</a>.</li>
             </ul>
         </section>
+        <section id="notes">
+            <h2>Important Notes</h2>
+            <ul>
+                <li>Book train tickets and CERN tours well in advance.</li>
+                <li>Accommodation near CERN is limited, so book early.</li>
+                <li>Verify the CERN shuttle schedule.</li>
+                <li>This is a suggested schedule, feel free to adapt it.</li>
+            </ul>
+        </section>
+    </div>
+    <div class="tab-content" id="accommodation-dining">
         <section id="accommodation">
             <h2>Affordable Accommodation in Geneva</h2>
             <p>Here are some budget-friendly accommodation options in Geneva that are highly rated by couples:</p>
@@ -72,15 +91,6 @@
                 </div>
             </div>
             <p>For more options and to check for the latest deals, you can visit <a href="https://www.booking.com/city/ch/geneva.html" target="_blank">Booking.com</a>.</p>
-        </section>
-        <section id="notes">
-            <h2>Important Notes</h2>
-            <ul>
-                <li>Book train tickets and CERN tours well in advance.</li>
-                <li>Accommodation near CERN is limited, so book early.</li>
-                <li>Verify the CERN shuttle schedule.</li>
-                <li>This is a suggested schedule, feel free to adapt it.</li>
-            </ul>
         </section>
         <section id="restaurants">
             <h2>Affordable Dining in Geneva</h2>
